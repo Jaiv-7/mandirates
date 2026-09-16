@@ -1,0 +1,6 @@
+{
+  "name": "Vadodara Krushi Mitra",
+  "description": "Bilingual agritech platform for Vadodara District providing area-wise vegetable recommendations and APMC mandi market prices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
