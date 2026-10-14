@@ -2,6 +2,7 @@ import {
   BookOpen,
   Calendar,
   Columns,
+  Download,
   HelpCircle,
   Home,
   Lightbulb,
@@ -113,6 +114,18 @@ export const Navbar: React.FC = () => {
               </kbd>
             </button>
 
+            {/* Download Project ZIP button */}
+            <a
+              id="btn-download-zip"
+              href="/vadodara-krushi-mitra.zip"
+              download="vadodara-krushi-mitra.zip"
+              className="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition-all shadow-xs"
+              title="Download full project ZIP"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>{language === 'gu' ? 'ઝિપ ડાઉનલોડ' : 'Download ZIP'}</span>
+            </a>
+
             {/* Language Switcher */}
             <LanguageSwitcher />
 
@@ -157,6 +170,18 @@ export const Navbar: React.FC = () => {
                 </button>
               );
             })}
+          </div>
+
+          <div className="pt-3 border-t border-stone-200 mt-2">
+            <a
+              id="mobile-btn-download-zip"
+              href="/vadodara-krushi-mitra.zip"
+              download="vadodara-krushi-mitra.zip"
+              className="flex items-center justify-center space-x-2 w-full py-2.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs transition-colors shadow-xs"
+            >
+              <Download className="w-4 h-4" />
+              <span>{language === 'gu' ? 'પ્રોજેક્ટ ઝિપ ફાઇલ ડાઉનલોડ કરો (.ZIP)' : 'Download Project ZIP (.zip)'}</span>
+            </a>
           </div>
         </div>
       )}

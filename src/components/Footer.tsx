@@ -1,4 +1,4 @@
-import { Heart, MapPin, ShieldAlert, Sprout, Store } from 'lucide-react';
+import { Download, Heart, MapPin, ShieldAlert, Sprout, Store } from 'lucide-react';
 import React from 'react';
 import { TabType, useAgritech } from '../context/AgritechContext';
 import { useLanguage } from '../context/LanguageContext';
@@ -176,6 +176,16 @@ export const Footer: React.FC = () => {
                 >
                   {t('nav.about', 'About Vadodara Agri')}
                 </button>
+              </li>
+              <li className="pt-2">
+                <a
+                  href="/vadodara-krushi-mitra.zip"
+                  download="vadodara-krushi-mitra.zip"
+                  className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-800/80 hover:bg-emerald-700 text-white font-medium text-xs transition-colors border border-emerald-600/50"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>{language === 'gu' ? 'પ્રોજેક્ટ ઝિપ (.ZIP)' : 'Download Source (.ZIP)'}</span>
+                </a>
               </li>
             </ul>
           </div>
